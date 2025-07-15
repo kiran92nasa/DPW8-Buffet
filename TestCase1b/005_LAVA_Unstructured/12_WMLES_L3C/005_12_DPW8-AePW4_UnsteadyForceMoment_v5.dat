@@ -1,0 +1,34 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#
+# DPW-8/AePW-4 FORCE AND MOMENT SUBMITTAL FORM (Version 5 - October 16, 2024)
+#
+# Provide this file for steady-state or time-averaged force and moment coefficients
+#
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE = "005.12"
+
+# Column     1             2            3           4       5      6        7          8          9         10        11        12
+VARIABLES = "GRID_LEVEL"  "GRID_SIZE"  "GRID_FAC"  "MACH"  "REY"  "ALPHA"  "CL_AVG"   "CD_AVG"   "CM_AVG"  "CL_RMS"  "CD_RMS"  "CM_RMS"
+
+#---------------------------------------------------
+#   PARTICIPANT, GRID, AND SOLVER INFORMATION
+#---------------------------------------------------
+DATASETAUXDATA ParticipantID   = "005"
+DATASETAUXDATA SubmissionDate  = "2025-07-11"
+DATASETAUXDATA Name            = "Kiran Ravikumar"
+DATASETAUXDATA Email           = "kiran.ravikumar@nasa.gov"
+DATASETAUXDATA Institution     = "NASA Ames Research Center"
+DATASETAUXDATA SolverName      = "LAVA Unstructured"
+DATASETAUXDATA BasicAlgorithm  = "WMLES"
+DATASETAUXDATA TurbulenceModel = "Vreman SGS Model with constant 0.08"
+DATASETAUXDATA GridId          = "Voronoi"
+DATASETAUXDATA Notes           = "N/A"
+
+ZONE T="005.12 Type C grid, Level 3, span=0.05c"
+AUXDATA Tstatic         = "271"
+AUXDATA Deltat          = "2.18163e-08"
+AUXDATA GridFileName    = "dpw-oat15a-L3C-5pc-gr1p075.cgns"
+AUXDATA Misc            = "Reference dx=3.59375e-05"
+ 3     208899624   2.84037e-06          0.73   3.00000e+06          3.50   8.93302e-01   4.41090e-02  -1.21781e-01   8.07966e-02   7.76340e-03   2.20640e-02
+
